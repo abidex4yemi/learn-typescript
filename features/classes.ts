@@ -1,5 +1,8 @@
+//Vehicle
 class Vehicle {
-  protected drive(): void {
+  constructor(public color: string) {}
+
+  drive(): void {
     console.log('Drive drive');
   }
 
@@ -8,7 +11,12 @@ class Vehicle {
   }
 }
 
+// Car
 class Car extends Vehicle {
+  constructor(public wheels: number, color: string) {
+    super(color);
+  }
+
   drive(): void {
     console.log('Vroom...');
   }
@@ -18,10 +26,11 @@ class Car extends Vehicle {
   }
 }
 
-// const vehicle: Vehicle = new Vehicle();
-// vehicle.drive();
-// vehicle.honk();
+const vehicle: Vehicle = new Vehicle('Orange');
+vehicle.drive();
+vehicle.honk();
+console.log(vehicle.color);
 
-const car: Car = new Car();
+const car: Car = new Car(4, 'Red');
 car.startDrivingProcess();
 car.honk();
