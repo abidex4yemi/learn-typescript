@@ -1,8 +1,14 @@
 import { User } from './User';
 import { Company } from './Company';
 
-const user = new User();
-const company = new Company();
+const mapContainer = document.querySelector('#map');
 
-console.log(user);
-console.log(company);
+const mapOptions = {
+  zoom: 1,
+  center: {
+    lat: 0,
+    lng: 0
+  }
+};
+
+new google.maps.Map(mapContainer, mapOptions);
