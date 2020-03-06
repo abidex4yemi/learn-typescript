@@ -10,7 +10,7 @@ const logTodo = (id: number, title: string, completed: boolean) => {
   `);
 };
 
-axios.get(url).then(res => {
+axios.get(url).then((res) => {
   // defines structure of an object
   interface Todo {
     id: number;
