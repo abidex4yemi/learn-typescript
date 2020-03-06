@@ -5,12 +5,11 @@ import { LinkedList } from './LinkedList';
 
 const numbersCollection = new NumbersCollection([10, 3, -5, 0]);
 numbersCollection.sort();
-
 console.log(numbersCollection.data);
 
-// const charactersCollection = new CharactersCollection('Goody');
-// const sorter = new Sorter(charactersCollection);
-// sorter.sort();
+// const charactersCollection = new CharactersCollection('Yemi');
+// charactersCollection.sort();
+// console.log(charactersCollection.data);
 
 // const linkedList = new LinkedList();
 // linkedList.addToTail(10);
@@ -18,7 +17,6 @@ console.log(numbersCollection.data);
 // linkedList.addToTail(2);
 // linkedList.addToTail(0);
 
-// const sorter = new Sorter(linkedList);
-// sorter.sort();
+// linkedList.sort();
 
 // console.log(linkedList.print());
