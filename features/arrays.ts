@@ -1,4 +1,4 @@
-const carMakers: (string | Number)[] = ['Toyota', 'Chevy', 'Ford'];
+const carMakers: (string | number)[] = ['Toyota', 'Chevy', 'Ford'];
 const dates = [new Date(), new Date()];
 
 const carsByMake = [['f150'], ['corolla'], ['camaro']];
