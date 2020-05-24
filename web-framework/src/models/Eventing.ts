@@ -16,8 +16,10 @@ export class Eventing {
       return;
     }
 
-    handlers.forEach((handler) => {
-      handler();
-    });
+    setTimeout(() => {
+      handlers.forEach((handler) => {
+        handler();
+      });
+    }, 1000);
   };
 }
