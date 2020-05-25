@@ -1,0 +1,17 @@
+{
+  "name": "features",
+  "version": "1.0.0",
+  "description": "",
+  "main": "decorators.js",
+  "dependencies": {
+    "reflect-metadata": "^0.1.13",
+    "tsc-node": "^0.0.3"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
