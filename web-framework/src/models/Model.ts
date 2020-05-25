@@ -39,10 +39,9 @@ export class Model<T extends HasID> {
   }
 
   save(): void {
-    this.sync
-      .save(this.attributes.getAll())
-      .then((res: AxiosResponse): void => {
-        this.trigger('save');
-      });
+    const data = this.attributes.getAll();
+    this.sync.save(data).then((): void => {
+      this.trigger('save');
+    });
   }
 }
