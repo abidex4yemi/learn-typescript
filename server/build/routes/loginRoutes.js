@@ -20,9 +20,6 @@ router.get('/logout', function (req, res) {
     req.session = undefined;
     return res.redirect('/login');
 });
-router.get('/login', function (req, res) {
-    return res.send("\n    <form method=\"post\">\n      <div>\n        <label>Email</label>\n        <input name=\"email\" />\n      </div>\n\n      <div>\n        <label>Password</label>\n        <input type=\"password\" name=\"password\" />\n      </div>\n\n      <button>Submit </button>\n    </form>\n  ");
-});
 router.post('/login', function (req, res) {
     var _a = req.body, email = _a.email, password = _a.password;
     if (email && password && email === 'hi@hi.com' && password === 'password') {
